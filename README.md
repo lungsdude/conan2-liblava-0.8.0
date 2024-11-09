@@ -9,7 +9,7 @@ liblava is a modern C++ and easy-to-use library for the Vulkan® API
 The following command will build liblava and publish the Conan package to the local system cache:
 
 ```bash
-conan create . lavablock/stable
+conan create .
 ```
 
 ## Config
@@ -33,7 +33,7 @@ CXX=clang++
 Save it as *config_clang* and create the package:
 
 ```bash
-conan create . lavablock/stable -pr=config_clang
+conan create . -pr=config_clang
 ```
 
 For more profile configuration options, refer to the [Conan docs](https://docs.conan.io/en/latest/reference/profiles.html).
@@ -46,7 +46,7 @@ Add a dependency to liblava to your project's *conanfile.txt*:
 
 ```ini
 [requires]
-liblava/0.7.3@lavablock/stable
+liblava/0.8.0@lavablock/stable
 ```
 
 and install all requirements:
